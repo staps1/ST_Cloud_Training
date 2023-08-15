@@ -1,12 +1,10 @@
 name: Build Python App
 on: push
 env:
-  GLOBAL_MESSAGE: 'Hi'
+  GLOBAL_MESSAGE: Hi
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      GLOBAL_MESSAGE: 'Hi'
     steps:
     - uses: actions/setup-python@v4
       with:
@@ -16,7 +14,7 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     env:
-      GREETING_MESSAGE: 'Hi World'
+      GREETING_MESSAGE: Hi World
     steps:
     - uses: actions/setup-python@v4
       with:
