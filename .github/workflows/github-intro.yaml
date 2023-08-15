@@ -1,5 +1,7 @@
 name: Build Python App
 on: push
+env:
+  GLOBAL_MESSAGE: 'Hi'
 jobs:
   build:
     runs-on: ubuntu-latest
