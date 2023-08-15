@@ -9,7 +9,7 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-    - run: python -c "print(${GLOBAL_MESSAGE})"
+    - run: python -c "print('${GLOBAL_MESSAGE}')"
 
   greet:
     runs-on: ubuntu-latest
@@ -19,4 +19,4 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-    - run: python -c "print(${GREETING_MESSAGE})"
+    - run: echo $GREET_MESSAGE
